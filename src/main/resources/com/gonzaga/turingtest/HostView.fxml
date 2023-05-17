@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: #00ff44; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gonzaga.turingtest.HostViewController">
+   <children>
+      <TextArea fx:id="chatBox" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="200.0" style="-fx-border-color: #00ff44; -fx-background-color: black; -fx-text-fill: #f6473b" stylesheets="@TextAreaStyle.css" />
+      <Text fill="#00ff44" layoutX="224.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most Recent Message " wrappingWidth="151.21630859375" />
+      <TextField fx:id="recentMessageBox" editable="false" layoutX="224.0" layoutY="41.0" prefHeight="26.0" prefWidth="245.0" style="-fx-text-fill: #f6473b; -fx-border-color: #00ff44; -fx-background-color: black;" />
+      <Text fx:id="precentCorrectDisplay" fill="#00ff44" layoutX="224.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percent Correct- 100%" wrappingWidth="151.21630859375" />
+      <Text fx:id="curUserDisplay" fill="#00ff44" layoutX="224.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currently Connected User- " wrappingWidth="245.0" />
+   </children>
+</AnchorPane>

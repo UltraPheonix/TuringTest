@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: #00ff44; -fx-border-width: 5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gonzaga.turingtest.TestViewController">
+	<children>
+		<TextArea id="logArea" fx:id="chatBox" editable="false" layoutX="14.0" layoutY="14.0" prefHeight="373.0" prefWidth="200.0" style="-fx-text-fill: #f6473b; -fx-border-color: #00ff44; -fx-background-color: black;" stylesheets="@TextAreaStyle.css" />
+		<Text fill="#00ff44" layoutX="224.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most Recent Message " wrappingWidth="151.21630859375" />
+		<TextField fx:id="recentMessageBox" editable="false" layoutX="224.0" layoutY="41.0" prefHeight="26.0" prefWidth="245.0" style="-fx-text-fill: #f6473b; -fx-border-color: #00ff44; -fx-background-color: black;" />
+		<Text fx:id="precentCorrectDisplay" fill="#00ff44" layoutX="224.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Percent Correct- 100%" wrappingWidth="151.21630859375" />
+		<Text fx:id="curUserDisplay" fill="#00ff44" layoutX="224.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test Host- " wrappingWidth="245.0" />
+      <TextField fx:id="inputField" layoutX="224.0" layoutY="200.0" prefHeight="28.0" prefWidth="245.0" style="-fx-text-fill: #f6473b; -fx-background-color: black; -fx-border-color: #00ff44;" />
+      <Button onAction="#askQuestion" layoutX="475.0" layoutY="200.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: black; -fx-border-color: #00ff44;" text="Ask" textFill="#00ff44" />
+      <Text fill="#00ff44" layoutX="224.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ask a question" />
+	</children>
+
+</AnchorPane>
